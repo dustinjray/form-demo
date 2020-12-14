@@ -1,0 +1,73 @@
+body {
+    background-image: url("imgs/lab-background.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "logo title"
+        "logo description";
+    max-height: 15vh;
+    width: 80%;
+    margin: 32px auto 32px auto;
+}
+
+.logo-wrapper {
+    grid-area: logo;
+    max-height: 15vh;
+}
+
+#logo {
+    height: 100%;
+}
+
+#title {
+    grid-area: title;
+    color: white;
+    align-self: center;
+    font-size: 3rem;
+}
+
+#description {
+    color: white;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.form-wrapper {
+    width: 80%;
+    margin: auto;
+    border-radius: 16px;
+    background-color: #141414;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 32px auto auto;
+}
+
+label {
+    color: white;
+    font-size: 1.5rem;
+    margin: 32px 0 16px 0;
+    align-self: flex-start;
+}
+
+input {
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+select {
+    height: 3rem;
+    font-size: 1.5rem;
+}
