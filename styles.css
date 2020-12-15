@@ -25,13 +25,13 @@ header {
 }
 
 #logo {
-    height: 100%;
+    width: 100%;
 }
 
 #title {
     grid-area: title;
     color: white;
-    align-self: center;
+    align-self: end;
     font-size: 3rem;
 }
 
@@ -39,6 +39,7 @@ header {
     color: white;
     font-style: italic;
     font-size: 1.5rem;
+    align-self: center;
 }
 
 .form-wrapper {
@@ -71,3 +72,19 @@ select {
     height: 3rem;
     font-size: 1.5rem;
 }
+
+.radio-div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.radio-div label{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+input [type="radio"] {
+    
+}
+
