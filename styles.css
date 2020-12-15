@@ -3,6 +3,7 @@ body {
     background-attachment: scroll;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -43,10 +44,10 @@ header {
 }
 
 .form-wrapper {
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-radius: 16px;
-    background-color: #141414;
+    background-color: #141414B3;
 }
 
 #survey-form {
@@ -58,7 +59,8 @@ header {
 
 label {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+
     margin: 32px 0 16px 0;
     align-self: flex-start;
 }
@@ -88,6 +90,7 @@ select {
 .checkbox-item {
     display: flex;
     align-items: center;
+    justify-self: flex-start;
 }
 
 .checkbox-item input {
