@@ -20,11 +20,11 @@
     <div class="form-wrapper">
         <form action="#nowhere" id="survey-form">
             <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="name" placeholder="Enter your name" name="name">
             <label for="email" id="email-label">Email</label>
-            <input type="text" id="email" placeholder="Enter your email">
+            <input type="text" id="email" placeholder="Enter your email" name="email">
             <label for="number" id="number-label">Age (optional)</label>
-            <input type="number" id="number" placeholder="Age" min="18" max="100">
+            <input type="number" id="number" placeholder="Age" min="18" max="100" name="age">
             <label for="dropdown">Which option best describes your current role?</label>
             <select name="role" id="dropdown">
                 <option value="astronaut">Astronaut</option>
@@ -45,6 +45,40 @@
                     <input type="radio" name="volunteer" value="no" id="no">NO.
                 </label>
             </div>
+            <label for="favorite">What was your favorite part of the tests?</label>
+            <select name="favorite" id="favorite">
+                <option value="glados">GLaDOS</option>
+                <option value="glados">GLaDOS</option>
+                <option value="glados">GLaDOS</option>
+                <option value="glados">GLaDOS</option>
+                <option value="glados">GLaDOS</option>
+            </select>
+            <label for="checkbox-group">What could Aperture do to improve testing?</label>
+            <div id="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="turrets" name="turrets">
+                    <label for="turrets">More Turrets</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="traps" name="traps">
+                    <label for="turrets">Deadlier Traps</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="nerve" name="nerve">
+                    <label for="nerve">More Nerve Gas</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cake" name="cake">
+                    <label for="cake">Cake</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="companion" name="companion">
+                    <label for="companion">Bring back the Companion Cube</label>
+                </div>
+            </div>
+            <label for="comments">Any additional comments or suggestions?</label>
+            <textarea name="comments" id="comments" cols="30" rows="6" placeholder="We won't read these..."></textarea>
+            <button id="submit">Submit</button>
 
         </form>
     </div>

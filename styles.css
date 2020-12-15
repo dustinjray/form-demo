@@ -84,7 +84,22 @@ select {
     align-items: center;
     margin: .5rem 0;
 }
-input [type="radio"] {
-    
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input {
+    margin-right: .5em;
+}
+
+.checkbox-item label {
+    margin: 16px 0;
+}
+
+button {
+    width: 75%;
+    background-color: #FFC107;
 }
 
