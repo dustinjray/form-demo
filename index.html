@@ -5,55 +5,59 @@
     <title>Aperture Science - Test Subject Survey</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-    <div class="logo-wrapper">
-        <img src="imgs/aperture-logo.png" alt="" id="logo">
+    <div class="logo-title">
+        <div class="image-wrapper">
+            <img id="logo" src="imgs/aperture-logo.png"
+                 alt="Aperture Science Innovators logo from the Portal video game series.">
+        </div>
+        <h1 id="title">Aperture Test Subject Exit Survey</h1>
+        <p id="description">"For the good of all of us (except the ones who are dead)."</p>
     </div>
-    <h1 id="title">Test Subject Exit Survey</h1>
-    <p id="description">"For the good of all of us (except the ones who are dead)"</p>
 </header>
 <main>
     <div class="form-wrapper">
-        <form action="#nowhere" id="survey-form">
+        <form action="#noaction" id="survey-form">
             <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" name="name">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
             <label for="email" id="email-label">Email</label>
-            <input type="text" id="email" placeholder="Enter your email" name="email">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
             <label for="number" id="number-label">Age (optional)</label>
-            <input type="number" id="number" placeholder="Age" min="18" max="100" name="age">
-            <label for="dropdown">Your current role:</label>
+            <input type="number" id="number" name="number" placeholder="Age" min="18" max="100">
+            <label for="dropdown" id="role-label">Your current role:</label>
             <select name="role" id="dropdown">
-                <option value="astronaut">Astronaut</option>
-                <option value="olympian">Olympian</option>
-                <option value="veteran">War Hero</option>
-                <option value="employee">Mandatory Employee Volunteer</option>
-                <option value="vagrant">Vagrant/Drifter</option>
+                <option value="astronaut" id="astronaut">Astronaut</option>
+                <option value="veteran" id="veteran">War Hero</option>
+                <option value="olympian" id="olympian">Olympian</option>
+                <option value="employee" id="employee">Mandatory Employee Volunteer</option>
+                <option value="drifter" id="drifter">Vagrant/Drifter</option>
             </select>
-            <label id="radio-label">Do you have a friend Aperture could test on?</label>
-            <div class="radio-div">
-                <label for="definitely">
-                    <input type="radio" name="volunteer" value="definitely" id="definitely">Definitely
+            <label for="radio-div" id="radio-label">Do you have any friends or loved ones to volunteer for further testing?</label>
+            <div id="radio-div">
+                <label for="definitely" id="definitely-label">
+                    <input type="radio" id="definitely" name="volunteer">Definitely
                 </label>
-                <label for="maybe">
-                    <input type="radio" name="volunteer" value="maybe" id="maybe">...Maybe
+                <label for="maybe" id="maybe-label">
+                    <input type="radio" id="maybe" name="volunteer">...Maybe
                 </label>
-                <label for="no">
-                    <input type="radio" name="volunteer" value="no" id="no">NO.
+                <label for="no" id="no-label">
+                    <input type="radio" id="no" name="volunteer">Absolutely not.
                 </label>
             </div>
-            <label for="favorite">What was your favorite part of the tests?</label>
+            <label for="favorite" id="favorite-label">What was your favorite part of the testing process?</label>
             <select name="favorite" id="favorite">
-                <option value="glados">GLaDOS</option>
-                <option value="glados">GLaDOS</option>
-                <option value="glados">GLaDOS</option>
-                <option value="glados">GLaDOS</option>
-                <option value="glados">GLaDOS</option>
+                <option value="GLaDOS">GLaDOS</option>
+                <option value="GLaDOS">GLaDOS</option>
+                <option value="GLaDOS">GLaDOS</option>
+                <option value="GLaDOS">GLaDOS</option>
+                <option value="GLaDOS">GLaDOS</option>
             </select>
-            <label for="checkbox-group">What could Aperture do to improve testing?</label>
+            <label for="checkbox-group" id="improvements-label">How could we improve the testing process?</label>
             <div id="checkbox-group">
                 <div class="checkbox-item">
                     <input type="checkbox" id="turrets" name="turrets">
@@ -61,27 +65,28 @@
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" id="traps" name="traps">
-                    <label for="turrets">Deadlier Traps</label>
+                    <label for="traps">Sneakier Traps</label>
                 </div>
                 <div class="checkbox-item">
-                    <input type="checkbox" id="nerve" name="nerve">
-                    <label for="nerve">More Nerve Gas</label>
+                    <input type="checkbox" id="gas" name="gas">
+                    <label for="gas">Deadlier Nerve Gas</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cube" name="cube">
+                    <label for="cube">I Miss the Companion Cube</label>
                 </div>
                 <div class="checkbox-item">
                     <input type="checkbox" id="cake" name="cake">
-                    <label for="cake">Cake</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="companion" name="companion">
-                    <label for="companion">Bring back the Companion Cube</label>
+                    <label for="cake">Also I was Promised Cake...</label>
                 </div>
             </div>
-            <label for="comments">Any additional comments or suggestions?</label>
-            <textarea name="comments" id="comments" cols="30" rows="6" placeholder="We won't read these..."></textarea>
+            <label for="comments" id="comments-label">Do you have any other comments or suggestions about the testing process?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="We aren't going to read this part..."></textarea>
             <button id="submit">Submit</button>
-
+            
         </form>
     </div>
+
 </main>
 
 
